@@ -41,7 +41,9 @@ namespace TheMovie.Controllers
                         Adult = movieFromMovieDB.Adult, // If it's a adult movie, from MovieDB
                         LoungeName = movie.salong, // The lounge name from Lounge entity in the database (contected using Entity Framework)
                         ViewingDate = movie.date, // Date of the viewing from the Viewing entity in the database
-                        TotalSeats = movie.maxseats // And number of seats in the Lounge
+                        TotalSeats = movie.maxseats, // And number of seats in the Lounge
+                        Picture = movieFromMovieDB.PosterPath
+
                     });
                 } catch
                 {

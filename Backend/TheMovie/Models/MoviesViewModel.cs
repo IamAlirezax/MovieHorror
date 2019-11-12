@@ -15,5 +15,7 @@ namespace TheMovie.Models
         public DateTime ViewingDate { get; set; }
         public int AvailableSeats { get; set; }
         public int TotalSeats { get; set; }
+
+        public string Picture { get; set; }
     }
 }
